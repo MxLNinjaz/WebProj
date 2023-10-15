@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #ffbd99;
+  background-image: radial-gradient(
+      at 84% 56%,
+      hsla(271, 74%, 69%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 34% 95%, hsla(303, 66%, 72%, 1) 0px, transparent 50%),
+    radial-gradient(at 64% 70%, hsla(138, 69%, 65%, 1) 0px, transparent 50%),
+    radial-gradient(at 31% 10%, hsla(31, 86%, 71%, 1) 0px, transparent 50%),
+    radial-gradient(at 19% 99%, hsla(331, 71%, 64%, 1) 0px, transparent 50%),
+    radial-gradient(at 33% 38%, hsla(343, 77%, 60%, 1) 0px, transparent 50%),
+    radial-gradient(at 80% 51%, hsla(60, 86%, 64%, 1) 0px, transparent 50%);
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.24);
+  border-radius: 10px;
+  padding: 25px;
+  border: 2px solid #000;
+  text-align: center;
+  min-width: 400px;
+  backdrop-filter: blur;
+  -webkit-backdrop-filter: blur(2px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.container i {
+  font-size: 100px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+label {
+  text-align: left;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #000;
+  background-color: transparent;
+  font-weight: 500;
+}
+
+input::placeholder {
+  color: #222;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  width: 100%;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 8px;
+  background-color: transparent;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+textarea {
+  resize: none;
+}
