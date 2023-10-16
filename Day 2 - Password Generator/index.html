@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Day 2 - Password Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <i class="bx bxs-lock"></i>
+      <h1>Password Generator</h1>
+      <div class="passContainer">
+        <input
+          type="text"
+          class="genPassword"
+          placeholder="Generated Password"
+          readonly
+        />
+        <span class="copySpan"><i class="bx bx-copy" id="copy"></i></span>
+      </div>
+      <div class="passOptions">
+        <div class="sliderContainer">
+          <input
+            type="range"
+            min="1"
+            max="20"
+            value="8"
+            class="slider"
+            id="sliderRange"
+          />
+          <span id="sliderNum"></span>
+        </div>
+        <div class="colums">
+          <div class="col1">
+            <div class="checkbox-item">
+              <input
+                type="checkbox"
+                id="psUppercase"
+                name="psUppercase"
+                value="uppercase"
+              />
+              <label for="psUppercase">Uppercase</label>
+            </div>
+            <div class="checkbox-item">
+              <input
+                type="checkbox"
+                id="psLowercase"
+                name="psLowercase"
+                value="lowercase"
+              />
+              <label for="psLowercase">Lowercase</label>
+            </div>
+          </div>
+
+          <div class="col2">
+            <div class="checkbox-item">
+              <input
+                type="checkbox"
+                id="psNumbers"
+                name="psNumbers"
+                value="Numbers"
+              />
+              <label for="psUppercase">Numbers</label>
+            </div>
+            <div class="checkbox-item">
+              <input
+                type="checkbox"
+                id="psSymbols"
+                name="psSymbols"
+                value="Symbols"
+              />
+              <label for="psUppercase">Symbols</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn-group">
+          <button class="btn-gen">Generate</button>
+          <button class="btn-ran">Randomize</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
