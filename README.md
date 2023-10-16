@@ -1,2 +1,0 @@
-# WebProj
-Daily Web Projects
